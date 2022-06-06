@@ -215,19 +215,15 @@ public class pegawaiGui extends javax.swing.JFrame {
         switch (jabatan) {
             case 0:
                 gajiPokok = 3000000;
-                txtOutputGajiPokok.setText("Rp. "+String.format("%,d", gajiPokok));
                 break;
             case 1:
                 gajiPokok = 2000000;
-                txtOutputGajiPokok.setText("Rp. "+String.format("%,d", gajiPokok));
             break;
             case 2:
                 gajiPokok = 1500000;
-                txtOutputGajiPokok.setText("Rp. "+String.format("%,d", gajiPokok));
                 break;
            case 3:
                 gajiPokok = 1000000;
-                txtOutputGajiPokok.setText("Rp. "+String.format("%,d", gajiPokok));
                 break;
             default:
                 break;
@@ -252,6 +248,7 @@ public class pegawaiGui extends javax.swing.JFrame {
         gajiBersih = gajiKotor - pajak;
         
         
+        txtOutputGajiPokok.setText("Rp. "+String.format("%,d", gajiPokok));
         txtOutputTunjangan.setText("Rp. "+String.format("%,d", tunjangan));
         txtOutputGajiKotor.setText("Rp. "+String.format("%,d",gajiKotor));
         txtOutputPajak.setText("Rp. "+String.format("%,d",pajak));
